@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contactus-line {
+    @apply w-[512px] h-[2px] my-2 block bg-greyline;
+}
+
+.hamburger-line {
+    @apply w-[28px] h-[2px] my-2 block bg-white;
+}
+
+.hamburger-active > span:nth-child(1){
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2){
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3){
+    @apply -rotate-45;
+}
+
+
+@layer components{
+    .car-desc {
+        @apply bg-greyform h-10 rounded-lg;
+    }
+    .desc {
+        @apply px-[0.985rem] align-middle mt-0.5
+    }
+}
